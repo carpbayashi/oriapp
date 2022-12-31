@@ -1,0 +1,15 @@
+<h1>ようこそ筋トレ村へ</h1>
+<p><b>理想の体を手に入れたい人をサポートするアプリです。</b></p>
+<p><b>君たちはでかくなりたいか？なろう。</b></p>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-date">
+      投稿日時：<%= post.created_at %>
+    </div>
+    <div class="post-memo">
+      <%= post.memo %>
+    </div>
+  </div>
+<% end %>
+
